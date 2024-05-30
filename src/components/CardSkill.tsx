@@ -1,8 +1,15 @@
+import '../styleSheets/CardSkill.css'
 
-const CardSkill = () => {
+interface Props{
+  name: string
+  icon: React.ReactNode
+}
+
+const CardSkill: React.FC<Props> = ({name, icon}) => {
   return (
-    <div>
-        
+    <div className={`cardSkill ${name.toLowerCase()}`}>
+          {icon}
+          <p className='cardSkill__name'>{name}</p>
     </div>
   )
 }
