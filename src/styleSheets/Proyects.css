@@ -1,0 +1,11 @@
+.proyects{
+    text-align: center;
+}
+.cardsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 50px;
+    margin-top: 40px;
+}

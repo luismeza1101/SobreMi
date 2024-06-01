@@ -1,0 +1,29 @@
+.card{
+    width: 500px;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+.card__image{
+    width: 100%;
+    border-radius: 5px;
+}
+.btns{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 10px 0;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 7px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #429bfb;
+}
