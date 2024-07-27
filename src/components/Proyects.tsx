@@ -1,13 +1,12 @@
 import CardProyect from "./CardProyect"
-import TCalculator from '../imgs/TipCalculator.png'
-import ListToDo from '../imgs/List-To-Do.png'
-import '../styleSheets/Proyects.css'
+import TCalculator from '../../public/imgs/TipCalculator.png'
+import ListToDo from '../../public/imgs/List-To-Do.png'
 
 const Proyects = () => {
   return (
-    <section className="proyects">
-      <h2>Proyectos</h2>
-      <div className="cardsContainer">
+    <section className="pt-20" id="proyects">
+      <h2 className="subtitle">PROYECTOS</h2>
+      <div className="my-7 grid gap-7 desktop:grid-cols-2">
         <CardProyect image={TCalculator}/>
         <CardProyect image={ListToDo}/>
       </div>
