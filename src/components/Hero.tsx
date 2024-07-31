@@ -52,7 +52,7 @@ const Hero = () => {
       </div>
       <div className="desktop:w-[40%]">
       <img
-        src="../../public/imgs/PictureMe.jpg "
+        src="../../imgs/PictureMe.jpg"
         alt="Foto"
         className="w-[250px] h-[250px] border-8 border-gray-400 shadow-shadow-picture select-none object-cover xl:w-[450px] xl:h-[450px] "
       />

@@ -13,7 +13,7 @@ const CardProyect: React.FC<Props> = ({ image, name, description, tecnologias, r
   return (
     <div className="w-[85%] flex flex-col shadow-2xl mx-auto gap-7 sm:w-[70%] md:flex-row md:w-[90%]">
       <img
-        src={`../../public/imgs/proyects/${image}`}
+        src={`../../imgs/proyects/${image}`}
         alt="Imagen de referencia"
         className="md:w-[40%] py-[50px]"
       />
