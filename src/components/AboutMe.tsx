@@ -1,19 +1,40 @@
-import { FaUserGraduate } from "react-icons/fa";
-
 const AboutMe = () => {
   return (
-    <section className='w-full pt-20' id="about_me">
-      <h2 className="subtitle">SOBRE MI</h2>
-      <div className="w-3/4 my-7 mx-auto border-[3px] border-gray-400 rounded-xl py-6 px-4 flex flex-col items-center gap-2">
-         <FaUserGraduate className="text-xl"/>
-         <span className="font-semibold">Educación</span>
-         <p className="text-center text-text-gray">Curso el 3er ciclo de la carrera de "Diseño y de Desarrollo de Software" en el instituto Certus</p>
-      </div>
-      <div className='w-[90%] mx-auto text-justify'>
-        <p className='data__description'>Soy una persona responsable y organizada, adaptable a cambios y desafíos. Me integro bien en equipos gracias a mi empatía y comunicación clara, fomentando un ambiente colaborativo. Siempre busco aprender y mejorar continuamente. En mi tiempo libre, disfruto hacer ejercicio, escuchar música y hacer trekking.</p>
+    <section className="w-full bg-fondo-secundario text-center " id="about_me">
+      <h2 className="subtitle mb-10 mt-20">SOBRE MI</h2>
+      <div className="flex flex-col justify-center pb-[30px] gap-11 desktop:flex-row">
+        <img src="" alt="" />
+        <p className="w-[90%] mx-auto text-justify">
+          Soy Luis, un entusiasta de la programación y actualmente estoy en el{" "}
+          <span className="font-bold">
+            3er ciclo de la carrera de Diseño y Desarrollo de Software en el
+            instituto CERTUS.
+          </span>{" "}
+          Estoy especializado en el{" "}
+          <span className="font-bold">
+            desarrollo frontend, utilizando tecnologías como React, TypeScript y
+            Tailwind CSS
+          </span>{" "}
+          para crear interfaces de usuario efectivas y atractivas.
+          <br /> Además de mis habilidades técnicas, me considero una persona
+          responsable, puntual y con una excelente capacidad para integrarme en
+          equipos de trabajo. La colaboración y la comunicación efectiva son
+          fundamentales para mí, y siempre busco contribuir positivamente en
+          cada proyecto en el que participo.
+          <br /> En mi tiempo libre, disfruto de diversas actividades que me
+          permiten mantener un equilibrio saludable y enriquecedor. <span className="font-bold">Hago
+          ejercicio regularmente, me gusta el trekking y explorar nuevos lugares
+          cuando tengo la oportunidad de viajar. También encuentro inspiración y
+          relajación escuchando música</span>, lo cual complementa mi enfoque hacia el
+          desarrollo personal y profesional.
+          <br /> Estoy comprometido con el aprendizaje continuo y con la mejora
+          constante en todos los aspectos de mi vida. Mi objetivo es aplicar mi
+          entusiasmo y habilidades en proyectos desafiantes y seguir creciendo
+          como profesional en el campo de la programación.
+        </p>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AboutMe
+export default AboutMe;

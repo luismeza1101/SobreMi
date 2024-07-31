@@ -1,30 +1,34 @@
-import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt  } from "react-icons/fa";
 
 const ContactMe = () => {
   return (
-    <div className="flex flex-col items-center pt-20" id="contact_me">
-      <h2 className="subtitle">CONTACTAME</h2>
-      <div className="my-7 w-full flex flex-col items-center desktop:flex-row justify-center gap-4 text-lg xl:justify-around">
-        <a href="#" target="blanck" className="buttonLinks items-center">
-          <FaFileAlt />
-          <span>ednilsonluis.11@gmail.com</span>
-        </a>
-        <a
-          href="https://github.com/luismeza1101"
-          target="black"
-          className="buttonLinks items-center justify-center"
-        >
-          <FaGithub />
-          <span>luismeza1101</span>
-        </a>
-        <a
-          href="https://www.linkedin.com/feed/"
-          target="blanck"
-          className="buttonLinks items-center"
-        >
-          <FaLinkedin />
-          <span>Ednilson Luis Meza Corilla</span>
-        </a>
+    <div className="flex flex-col items-center bg-fondo-claro" id="contact_me">
+      <h2 className="subtitle mt-20">CONTACTAME</h2>
+      <div className="my-7 w-[90%] text-center flex flex-col items-center gap-7 text-lg desktop:w-1/2">
+        <p>Si estás buscando un desarrollador comprometido, con un fuerte enfoque en la responsabilidad y el trabajo en equipo, no dudes en contactarme. Estoy listo para aportar mi pasión y habilidades a tu próximo proyecto.</p>
+        <div className="flex flex-col gap-7 ">
+          <span className="flex items-center gap-5"><FaEnvelope/> ednilsonluis.11@gmail.com</span>
+          <span className="flex items-center gap-5"><FaPhoneAlt/> +51 913 536 441</span>
+          <div className="flex flex-col gap-3">
+            <h4>Otras redes</h4>
+            <div className="flex justify-center gap-6">
+              <a
+                href="https://github.com/luismeza1101"
+                target="black"
+                className="custom-icon"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://www.linkedin.com/feed/"
+                target="blanck"
+                className="custom-icon"
+              >
+                <FaLinkedin />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

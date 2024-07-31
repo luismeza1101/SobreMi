@@ -1,14 +1,14 @@
 import CardProyect from "./CardProyect"
-import TCalculator from '../../public/imgs/TipCalculator.png'
-import ListToDo from '../../public/imgs/List-To-Do.png'
+import { proyects_data } from "../data"
 
 const Proyects = () => {
   return (
-    <section className="pt-20" id="proyects">
-      <h2 className="subtitle">PROYECTOS</h2>
-      <div className="my-7 grid gap-7 desktop:grid-cols-2">
-        <CardProyect image={TCalculator}/>
-        <CardProyect image={ListToDo}/>
+    <section className="bg-fondo-secundario text-center" id="proyects">
+      <h2 className="subtitle mb-10 mt-20">PROYECTOS</h2>
+      <div className="flex flex-col gap-14 my-7">
+        {proyects_data.map((proyect) => (
+          <CardProyect image={proyect.img} name={proyect.name} description={proyect.descripcion} tecnologias={proyect.tecnologias} repositorio={proyect.repositorio} url={proyect.url} key={proyect.name}/>
+        ))}
       </div>
     </section>
   )
